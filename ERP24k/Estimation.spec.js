@@ -11,7 +11,7 @@ test('test', async ({ page }) => {
   await page.getByRole('button', { name: 'Sign In' }).click();
   await page.getByRole('link', { name: 'Estimation' }).click();
   await page.goto('https://erpqa.azurewebsites.net/estimation');
-  await page.getByRole('textbox', { name: 'Enter Weight Barcode Number' }).click();
+  await page.getByRole('title', { name: 'Enter Weight Barcode Number' }).click();
   await page.getByRole('textbox', { name: 'Enter Weight Barcode Number' }).fill('20');
   await page.getByRole('textbox', { name: 'Enter Weight Barcode Number' }).press('Enter');
   await page.getByRole('button', { name: 'Search' }).click();
