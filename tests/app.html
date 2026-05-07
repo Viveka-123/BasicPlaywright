@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Playwright Locators Practice</title>
+  <style>
+    body { font-family: Arial; margin: 40px; }
+    section { margin-bottom: 30px; }
+    button, input { margin: 5px; padding: 6px; }
+    .card { border: 1px solid #ccc; padding: 10px; width: 300px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <h1>Playwright Built-in Locators Practice</h1>
+
+  <!-- getByRole -->
+  <section>
+    <h2>getByRole()</h2>
+    <button>Login</button>
+    <button>Register</button>
+    <a href="#">Forgot Password?</a>
+  </section>
+
+  <!-- getByLabel -->
+  <section>
+    <h2>getByLabel()</h2>
+    <label>
+      Username
+      <input type="text" />
+    </label>
+    <label for="pwd">Password</label>
+    <input id="pwd" type="password" />
+  </section>
+
+  <!-- getByPlaceholder -->
+  <section>
+    <h2>getByPlaceholder()</h2>
+    <input type="email" placeholder="Enter your email" />
+    <input type="text" placeholder="Search products" />
+  </section>
+
+  <!-- getByText -->
+  <section>
+    <h2>getByText()</h2>
+    <p>Welcome to Playwright Testing</p>
+    <p>Click Submit to continue</p>
+    <button>Submit</button>
+  </section>
+
+  <!-- getByAltText -->
+  <section>
+    <h2>getByAltText()</h2>
+    <img src="https://via.placeholder.com/100" alt="Company Logo" />
+  </section>
+
+  <!-- getByTitle -->
+  <section>
+    <h2>getByTitle()</h2>
+    <button title="Refresh Page">Refresh</button>
+  </section>
+
+  <!-- getByTestId -->
+  <section>
+    <h2>getByTestId()</h2>
+    <button data-pw="login-btn">Login with TestId</button>
+  </section>
+
+  <!-- Chaining and filter -->
+  <section>
+    <h2>Chaining / Filter</h2>
+    <div class="card">
+      <h3>Product 1</h3>
+      <button>Add to cart</button>
+    </div>
+    <div class="card">
+      <h3>Product 2</h3>
+      <button>Add to cart</button>
+    </div>
+  </section>
+
+</body>
+</html>
