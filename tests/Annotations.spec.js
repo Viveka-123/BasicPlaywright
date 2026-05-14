@@ -35,7 +35,7 @@ test.fail("Fail",async({page})=>{
 
 })
 
-test.fixme("fixme",async({page})=>{
+/*test.fixme("fixme",async({page})=>{
    const email= await page.locator('input[formcontrolname="email"]').fill("viveka")
    const input=await email.inputValue()
    console.log(input)
@@ -43,7 +43,7 @@ test.fixme("fixme",async({page})=>{
    await page.locator('button[type="submit"]').click()  
 
 })
-
+*/
 test("Slow",async({page})=>{
     test.slow()
 
